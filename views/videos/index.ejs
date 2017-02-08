@@ -1,0 +1,16 @@
+<h1 id="siteName"><span id="fail">Fail</span>Tube</h1>
+
+<section id="allVideos">
+	<% for (var i = 0; i < videos.length; i++) { %>
+	  <div class="card">
+	  	<img class="card-img-top" src="<%= videos[i].img %>" alt="Card image cap">
+	  	<div class="card-block">
+		    <a href="/<%= videos[i].id %>">
+		      <h3 class="vidTitle"><%= videos[i].title %></h3>
+		      <p class="failLevel">fail level: <%= videos[i].failLevel %></p>
+		      <p class="nsfw">nsfw?: <%= videos[i].nsfw %></p>
+		    </a>
+		</div>
+	  </div>
+	<% } %>
+</section>
